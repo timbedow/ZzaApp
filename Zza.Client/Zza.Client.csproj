@@ -130,6 +130,12 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Zza.Entities\Zza.Entities.csproj">
+      <Project>{7ec71c6e-e769-4c9e-8327-c72b0724b1b7}</Project>
+      <Name>Zza.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadataStorage Include="Service References\ZzaServices\" />
   </ItemGroup>
   <ItemGroup>
@@ -146,12 +152,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Zza.Entities\Zza.Entities.csproj">
-      <Project>{7ec71c6e-e769-4c9e-8327-c72b0724b1b7}</Project>
-      <Name>Zza.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -131,14 +131,14 @@
   </wsdl:binding>
   <wsdl:service name="ZzaService">
     <wsdl:port name="BasicHttpBinding_IZzaService" binding="tns:BasicHttpBinding_IZzaService">
-      <soap:address location="http://locahost:2112/Zza" />
+      <soap:address location="http://localhost:2112/Zza" />
     </wsdl:port>
     <wsdl:port name="NetTcpBinding_IZzaService" binding="tns:NetTcpBinding_IZzaService">
       <soap12:address location="net.tcp://localhost:2113/Zza" />
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:2113/Zza</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Upn>WIN81VM\Brian</Upn>
+          <Upn>DESKTOP-M5OQ5QM\timbedow</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

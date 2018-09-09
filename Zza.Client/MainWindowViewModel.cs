@@ -30,6 +30,7 @@ namespace Zza.Client
             {
                 LoadProductsAndCustomers();
             }
+            
         }
 
         public ObservableCollection<Product> Products
