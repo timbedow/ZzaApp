@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -35,6 +36,11 @@ namespace Zza.Services
             context.Orders.Add(order);
             order.OrderItems.ForEach(oi => context.OrderItems.Add(oi));
             context.SaveChanges();
+        }
+
+        private void efErrorFix()
+        {
+            var efError = SqlProviderServices.Instance;
         }
     }
 }
